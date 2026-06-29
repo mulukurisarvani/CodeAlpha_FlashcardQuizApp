@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha - Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h2>Flashcard Quiz App</h2>
+        
+        <div class="flashcard-wrapper">
+            <div class="flashcard" id="flashcard">
+                <div class="card-face card-front">
+                    <p id="card-question">Add your first flashcard to begin!</p>
+                </div>
+                <div class="card-face card-back">
+                    <p id="card-answer">Answer text displays here.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn">◀ Previous</button>
+            <button id="flip-btn">Show Answer</button>
+            <button id="next-btn">Next ▶</button>
+        </div>
+
+        <p class="counter">Card: <span id="current-index">0</span> / <span id="total-count">0</span></p>
+
+        <hr>
+
+        <div class="form-container">
+            <h3>Add New Flashcard</h3>
+            <div class="input-group">
+                <input type="text" id="new-question" placeholder="Enter Question Here...">
+                <input type="text" id="new-answer" placeholder="Enter Answer Here...">
+            </div>
+            <button id="add-btn">Save Flashcard</button>
+            <button id="delete-btn" class="danger-btn">Delete Current Card</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
